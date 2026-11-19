@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#f6b85d"><meta name="description" content="Explore Merrow Bay, take the wheel, and follow the Afterlight story across a sunlit coastal city."><title>MERROW BAY — Afterlight</title>
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<canvas id="view" aria-label="Merrow Bay open world"></canvas>
+<div id="grain"></div><div id="vignette"></div>
+<header id="brand"><span class="sun-mark">✳</span><span>MERROW <b>BAY</b></span><i>COASTAL DISTRICT · 09:42 AM</i></header>
+<section id="hud" class="hud hidden">
+<div class="hud-left"><div class="label">CONDITION</div><div class="health-track"><span id="healthbar"></span></div><div class="meta"><span>♥ <b id="health">100</b></span><span>◈ $<b id="cash">2,450</b></span></div><div id="wanted" aria-label="wanted level">☆☆☆☆☆</div></div>
+<div class="mission-card"><div class="label"><span class="live-dot"></span> CURRENT JOB</div><strong id="job">THE GLASS TIDE</strong><div id="objective">Find the coupe outside the boardwalk.</div><div class="job-line"><span id="chapter">01 / 03</span><span id="reward">+$350</span></div></div>
+<div class="hud-right"><div class="speed"><strong id="speed">00</strong><span>KM/H</span></div><div class="gear" id="gear">ON FOOT</div><canvas id="map" width="180" height="180"></canvas><div class="map-tag">MERROW BAY <span>◉</span></div></div>
+<div class="toast" id="toast"></div><div class="prompt" id="prompt"></div>
+</section>
+<div id="start" class="screen hidden"><div class="start-top"><span>OPEN WORLD · STORY EDITION</span><span>EST. 1987 — WESTERN COAST</span></div><div class="start-title"><div class="eyebrow">A CITY THAT NEVER WAITS</div><h1>AFTER<span>LIGHT</span></h1><p>Every tide brings something back.</p><button id="begin">ENTER THE CITY <span>↗</span></button><div class="keys">WASD MOVE / DRIVE <i>·</i> SHIFT SPRINT <i>·</i> E ENTER / INTERACT <i>·</i> F FIRE <i>·</i> ESC PAUSE</div></div><div class="start-bottom"><span>MERROW BAY, CALIFORNIA</span><span>AN ORIGINAL CITY BY THE SEA</span></div></div>
+<div id="pause" class="screen hidden"><div class="pause-card"><div class="eyebrow">MERROW BAY IS STILL OUT THERE</div><h2>PAUSED</h2><button id="resume">BACK TO THE CITY</button><button id="save">SAVE PROGRESS <span id="save-note">LOCAL</span></button><p>WASD move · Shift sprint · E enter / interact · F fire · Esc pause</p></div></div>
+<div id="mission-pop" class="mission-pop hidden"><span>JOB UPDATED</span><b id="pop-title"></b></div>
+<script type="module" src="./src/main.js"></script>
+</body></html>
